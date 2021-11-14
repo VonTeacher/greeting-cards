@@ -88,7 +88,9 @@ const randomElement = (array) => {
 
 const rewrite = document.getElementById('rewrite');
 rewrite.addEventListener('click', () => {
-  writeCard();
+  setTimeout(() => {
+    writeCard();
+  }, 500);
 })
 
 const writeCard = () => {
