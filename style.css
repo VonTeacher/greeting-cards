@@ -81,15 +81,20 @@ p {
   top: 200px;
 }
 
+.card:active,
+.card:focus,
 .card:hover {
   box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
   transform: perspective(2500px) rotate(5deg);
 }
 
+.card:active .card-front,
+.card:focus .card-front,
 .card:hover .card-front {
   transform: rotateY(-160deg);
 }
-
+.card:active h3,
+.card:focus h3,
 .card:hover h3 {
   transition-duration: 0.29s;
   visibility: hidden;
