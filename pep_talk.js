@@ -67,7 +67,7 @@ const fourth = [
   'and that\'s a fact.',
   'so treat yourself.',
   'you feel me?',
-  'that\'s just sciance.',
+  'that\'s just science.',
   'would I lie?',
   'for reals.',
   '*mic drop*',
