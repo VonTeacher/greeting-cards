@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body {
+  align-items: center;
+  background-color: #073b4c;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card {
+  cursor: pointer;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 2s;
+  width: 250px;
+}
+
+.card-front {
+  border: inset 1px;
+  background-color: beige;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 30px 0 50px rgba(0, 0, 0, 0.4);
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  transform-origin: left;
+  transition: 0.6s;
+  width: 250px;
+}
+
+.card-front h3 {
+  align-content: center;
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 82%;
+  justify-content: center;
+}
+
+.card-inside {
+  background-color: beige;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  z-index: -1;
+}
+
+p {
+  color: #333;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  margin: 40px;
+}
+
+#rewrite {
+  border: 1px dashed;
+  bottom: 0;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+}
+
+.noselect {
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#signature {
+  color: #333;
+  left: 150px;
+  position: absolute;
+  top: 200px;
+}
+
+.card:hover {
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
+  transform: perspective(2500px) rotate(5deg);
+}
+
+.card:hover .card-front {
+  transform: rotateY(-160deg);
+}
+
+.card:hover h3 {
+  visibility: hidden;
+}
