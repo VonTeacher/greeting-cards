@@ -87,9 +87,8 @@ const randomElement = (array) => {
 }
 
 const rewrite = document.getElementById('rewrite');
-rewrite.addEventListener('click', () => {
-  writeCard();
-})
+rewrite.addEventListener('touchstart', () => writeCard())
+rewrite.addEventListener('click', () => writeCard())
 
 const writeCard = () => {
   const salutation = document.getElementById('salutation');
